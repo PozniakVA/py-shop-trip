@@ -1,5 +1,5 @@
 import math
-from datetime import datetime
+import datetime
 
 
 class Shop:
@@ -19,11 +19,9 @@ def shopping(
         products: dict,
         prices: dict
 ) -> None:
-    print(
-        datetime.now().strftime("Date: %d/%m/%Y %H:%M:%S\n"),
-        f"Thanks, {name}, for your purchase!\n"
-        f"You have bought: "
-    )
+    print(datetime.datetime.now().strftime("Date: %d/%m/%Y %H:%M:%S"))
+    print(f"Thanks, {name}, for your purchase!")
+    print("You have bought:")
     total_cost = 0
     for product in products:
         total_sum_for_product = prices[product] * products[product]
