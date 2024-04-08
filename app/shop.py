@@ -44,7 +44,6 @@ def find_trip_cost(
         shop_location: list,
         fuel_price: int | float,
         fuel_consumption: int | float
-
 ) -> float | int:
     distance = math.dist(customer_location, shop_location)
     trip_cost = (distance * 2 * fuel_consumption * fuel_price) / 100

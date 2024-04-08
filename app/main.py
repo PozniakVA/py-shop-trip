@@ -48,4 +48,5 @@ def shop_trip() -> None:
 
         print(
             f"{customer.name} rides home\n"
-            f"{customer.name} now has {customer.money - min(shops)} dollars\n")
+            f"{customer.name} now has {customer.money - min(shops)} dollars\n"
+        )
